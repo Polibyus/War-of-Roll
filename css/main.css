@@ -1,0 +1,372 @@
+html {
+  font-size: 130%; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+/* Estilo general del sitio */
+body {
+  background-image: url(../img/background.jpg);
+  background-position: center;
+  background-size: cover;
+  font-family: 'Noto Sans JP', sans-serif; }
+
+/* un fondo generico para elementos que deja ver la imagen de atras */
+.fondo-transparente {
+  background-color: rgba(255, 255, 255, 0.479);
+  border: 4px solid;
+  border-style: outset; }
+
+/* Estilos del header y menu */
+header {
+  display: flex; }
+
+/* Logo ubicado a la izquierda */
+#logotipo {
+  width: 125px;
+  height: 144px;
+  animation-name: rotarLogo;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  margin: 10px; }
+
+/* Animacion de logotipo */
+@keyframes rotarLogo {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+/* listado/nav para el menu */
+#menu-fixed {
+  margin: 0px;
+  padding: 3px;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row;
+  position: absolute;
+  top: 0%;
+  right: 0%; }
+
+.menu-fixed__nav {
+  color: rgba(135, 228, 28, 0.938);
+  margin: 15px;
+  text-shadow: 1px 1px 1px #181818; }
+
+#menu-fixed li:hover {
+  color: rgba(135, 228, 28, 0.938);
+  background-color: rgba(24, 221, 211, 0.815);
+  text-shadow: 1px 1px 1px #181818; }
+
+#submenu ul {
+  padding: 10px;
+  list-style-type: none;
+  background-color: rgba(24, 221, 211, 0.815);
+  display: none;
+  position: absolute; }
+
+#submenu ul li {
+  font-size: 1em;
+  padding: 10px;
+  list-style-type: none;
+  background-color: rgba(24, 221, 211, 0.815); }
+
+/* Fin de menu */
+/* active para hacer saber en que pag esta */
+.active {
+  background-color: rgba(24, 221, 211, 0.815); }
+
+/* dejar los links sin subrayado */
+a {
+  text-decoration: none; }
+
+a:link {
+  color: rgba(135, 228, 28, 0.938); }
+
+a:visited {
+  color: rgba(135, 228, 28, 0.938); }
+
+/* no hacer llamativo el footer */
+footer {
+  background-image: linear-gradient(to bottom, rgba(24, 221, 211, 0.815), rgba(135, 228, 28, 0.938));
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+  margin-top: 50px; }
+
+/* redes visibles a la izquierda */
+#redes {
+  flex-flow: row;
+  position: fixed;
+  bottom: 0%; }
+
+/* emprolijar redes */
+.logo-redes {
+  padding-left: 5px;
+  margin: 8px; }
+
+.contacto {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  justify-content: space-around;
+  align-items: center; }
+
+/* estilizar formulario */
+#contacto__form {
+  padding: 20px;
+  width: 50%; }
+
+#contacto__form__fieldset {
+  background-color: rgba(0, 82, 3, 0.918);
+  font-size: 0.7em;
+  font-weight: bolder;
+  padding: 20px;
+  text-align: center; }
+
+#contacto__form legend {
+  color: white;
+  font-size: 2em;
+  text-shadow: 4px 2px 3px rgba(135, 228, 28, 0.938);
+  font-weight: 5px;
+  text-decoration: underline; }
+
+/* imagen heraldo (futuramente sera interactiva escucho ideas */
+#contacto-img {
+  width: 400px;
+  height: 50%; }
+
+/* acomodar personajes de a 2 en fila */
+#section-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.section-info__img {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  transition: all 1s; }
+
+.section-info__img:hover {
+  width: 250px;
+  height: 250px; }
+
+.section-info__description {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%; }
+
+.section-info__text {
+  padding: 5px;
+  background-color: rgba(62, 143, 168, 0.616);
+  border: 2px solid black;
+  margin: 10px; }
+
+/* fin de personajes */
+/* estilo al boton de volver atras */
+.boton-home {
+  color: #faf3f3;
+  font-size: 0.8em;
+  margin: 20px;
+  background-color: rgba(24, 221, 211, 0.815);
+  border: 2px solid #630404;
+  border-radius: 5px;
+  padding: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 1s; }
+
+/* accion de mouse sobre el boton menu */
+.boton-home:hover {
+  font-size: 0.9em;
+  background-color: rgba(135, 228, 28, 0.938); }
+
+/* estilizar botones */
+input[type=submit], [type=reset] {
+  background-color: rgba(135, 228, 28, 0.938);
+  color: #faf3f3;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  margin: 3px; }
+
+input[type=button] {
+  display: none; }
+
+#contacto_form label {
+  color: #faf3f3;
+  text-shadow: 2px 1px 1.5px rgba(0, 82, 3, 0.918);
+  font-size: 30px;
+  font-weight: 5px;
+  border: none; }
+
+input[type=text], [type=email] {
+  height: 30px;
+  width: 50%; }
+
+input[type=text], [type=email]:focus {
+  border: 3px solid #faf3f3; }
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #faf3f3;
+  border-radius: 4px;
+  background-color: #faf3f3;
+  resize: none; }
+
+/* Comienzo galeria con grid, dios me ayude (? */
+.grid-galeria {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-gap: 5px;
+  grid-auto-flow: row dense; }
+
+@media all and (min-width: 320px) {
+  .grid-galeria {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media all and (min-width: 768px) {
+  .grid-galeria {
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media all and (min-width: 1024px) {
+  .grid-galeria {
+    grid-template-columns: repeat(5, 1fr); } }
+
+.grid-galeria__img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: contain; */
+  object-fit: cover; }
+
+/* fin de grid */
+@media (min-width: 320px) {
+  h1 {
+    font-size: 3em; }
+  h2 {
+    font-size: 1em; }
+  h3 {
+    font-size: 0.7em; }
+  h4 {
+    font-size: 0.4em; }
+  h5 {
+    font-size: 0.1em; }
+  h6 {
+    font-size: 0em; } }
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.5em; }
+  h2 {
+    font-size: 1.5em; }
+  h3 {
+    font-size: 1.2em; }
+  h4 {
+    font-size: 0.9em; }
+  h5 {
+    font-size: 0.6em; }
+  h6 {
+    font-size: 0.5em; } }
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 4em; }
+  h2 {
+    font-size: 2em; }
+  h3 {
+    font-size: 1.7em; }
+  h4 {
+    font-size: 1.4em; }
+  h5 {
+    font-size: 1.1em; }
+  h6 {
+    font-size: 1em; } }
+
+/* titulo principal de la pagina (posiblemente sea remplazado) */
+.titulo {
+  text-align: center;
+  text-shadow: 7px 4px 5px rgba(24, 221, 211, 0.815);
+  font-weight: 5px;
+  text-decoration: underline;
+  margin-bottom: 50px; }
+
+/* aplicar a todos los textos si es necesario un cambio usar un id*/
+.texto-general {
+  color: #181818;
+  text-transform: capitalize;
+  text-shadow: 1px 1px;
+  background-color: lightseagreen(65, 105, 225, 0.9); }
+
+/* estilo general para los subtitulos de la pagina */
+.subtitulo {
+  text-align: center;
+  text-shadow: 4px 2px 3px #630404;
+  font-weight: 5px;
+  text-decoration: underline;
+  margin: 5px;
+  margin-bottom: 20px;
+  padding: 5px; }
+
+/* Prueba de estilos en tabla */
+#seccion-table {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.seccion-table__comp {
+  border: 2px solid #630404;
+  background-color: rgba(255, 255, 255, 0.479);
+  width: 50%;
+  height: 200px;
+  margin-bottom: 50px;
+  text-align: center;
+  border-collapse: collapse; }
+
+.seccion-table__comp td, .tablaComparativa th {
+  border: 1px solid #faf3f3;
+  padding: 3px 2px; }
+
+.seccion-table__comp tbody td {
+  font-size: 1em; }
+
+.seccion-table__comp thead {
+  background: #630404; }
+
+.seccion-table__comp thead th {
+  font-size: 1em;
+  font-weight: bold;
+  color: #faf3f3;
+  text-align: center;
+  border-left: 2px solid #630404; }
+
+.seccion-table__comp--sqins {
+  list-style: square inside; }
+
+.section-home {
+  margin-right: 20%;
+  margin-left: 20%; }
+
+.icon-50px {
+  font-size: 50px;
+  height: 50px;
+  width: 50px; }
+
+.icon-100px {
+  font-size: 100px;
+  height: 100px;
+  width: 100px; }
+
+.icon-150px {
+  font-size: 150px;
+  height: 150px;
+  width: 150px; }
