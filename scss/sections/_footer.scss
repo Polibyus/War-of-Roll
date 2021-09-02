@@ -2,10 +2,6 @@
 /* no hacer llamativo el footer */
 footer {
     background-image: linear-gradient(to bottom, $aqua-green, $ligth-green);
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    text-align: center;
     margin-top: 50px;
 }
 
