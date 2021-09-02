@@ -1,0 +1,35 @@
+/* Comienzo galeria con grid, dios me ayude (? */
+
+.grid-galeria {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-gap: 5px;
+    grid-auto-flow: row dense;
+  }
+  
+  @media all and (min-width: 320px) {
+    .grid-galeria {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media all and (min-width: 768px) {
+    .grid-galeria {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media all and (min-width: 1024px) {
+    .grid-galeria {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+
+  .grid-galeria__img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+    object-fit: cover;
+  }
+
+/* fin de grid */

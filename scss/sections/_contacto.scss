@@ -1,0 +1,38 @@
+.contacto {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* estilizar formulario */
+
+#contacto__form {
+    padding: 20px;
+    width: 50%;
+}
+
+#contacto__form__fieldset {
+    background-color: $dark-green;
+    font-size: 0.7em;
+    font-weight: bolder;
+    padding: 20px;
+    text-align: center;
+}
+
+#contacto__form legend {
+    color: white;
+    font-size: 2em;
+    text-shadow: 4px 2px 3px $ligth-green;
+    font-weight: 5px;
+    text-decoration: underline;
+
+}
+
+/* imagen heraldo (futuramente sera interactiva escucho ideas */
+
+#contacto-img {
+    width: 400px;
+    height: 50%;
+}

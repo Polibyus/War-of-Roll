@@ -1,0 +1,62 @@
+/* estilo al boton de volver atras */
+
+.boton-home {
+    color: $whiteeth;
+    font-size: 0.8em;
+    margin: 20px;
+    background-color: $aqua-green;
+    border: 2px solid $dark-red;
+    border-radius: 5px;
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+/* accion de mouse sobre el boton menu */
+.boton-home:hover {
+    font-size: 0.9em;
+    background-color: $ligth-green;
+}
+
+
+/* estilizar botones */
+
+input[type=submit], [type=reset] {
+    background-color: $ligth-green;
+    color: $whiteeth;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    margin: 3px;
+  }
+
+input[type=button] {
+      display: none;
+  }
+
+#contacto_form label {
+    color: $whiteeth;
+    text-shadow: 2px 1px 1.5px $dark-green;
+    font-size: 30px;
+    font-weight: 5px;
+    border: none;
+}
+input[type=text], [type=email] {
+    height: 30px;
+    width: 50%;
+    }
+input[type=text], [type=email]:focus {
+    border: 3px solid $whiteeth;;
+    }
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid $whiteeth;;
+    border-radius: 4px;
+    background-color: $whiteeth;
+    resize: none;
+}

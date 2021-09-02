@@ -1,0 +1,28 @@
+html {
+    font-size: 130%;
+}
+
+//Variables
+
+$aqua-green: rgba(24, 221, 211, 0.815);
+$dark-red: rgb(99, 4, 4);
+$ligth-green: rgba(135, 228, 28, 0.938);
+$dark-green: rgba(0, 82, 3, 0.918);
+$whiteeth: rgb(250, 243, 243);
+$shadow-black: rgb(24, 24, 24);
+$glass: rgba(255, 255, 255, 0.479);
+
+//Importar scss (de paso pruebo el comentario de linea)
+
+@import "globals/body";
+@import "sections/header";
+@import "sections/footer";
+@import "sections/contacto";
+@import "sections/info";
+@import "components/buttons";
+@import "components/galery";
+@import "components/text";
+@import "components/table";
+@import "components/img";
+@import "desafiocomplementario";
+

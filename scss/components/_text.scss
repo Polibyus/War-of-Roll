@@ -1,0 +1,73 @@
+//Idea de media query con mixin, probando 1... 2... 3...
+
+@mixin encabezados($tamanio) {
+    h1 {
+      font-size: $tamanio + 2;
+    }
+    h2 {
+      font-size: $tamanio;
+    }
+    h3 {
+      font-size: $tamanio - 0.3;
+    }
+    h4 {
+        font-size: $tamanio - 0.6;
+      }
+    h5 {
+        font-size: $tamanio - 0.9;
+    }
+    h6 {
+        font-size: $tamanio - 1;
+    }
+  }
+
+
+@media(min-width: 320px) {
+  @include encabezados(1em);
+}
+@media(min-width: 768px) {
+  @include encabezados(1.5em);
+}
+@media(min-width: 1024px) {
+  @include encabezados(2em);
+}
+
+
+
+
+/* titulo principal de la pagina (posiblemente sea remplazado) */
+
+.titulo {
+    text-align: center;
+    // font-size: 100px;
+    text-shadow: 7px 4px 5px $aqua-green;
+    font-weight: 5px;
+    text-decoration: underline;
+    margin-bottom: 50px;
+
+}
+
+/* aplicar a todos los textos si es necesario un cambio usar un id*/
+
+.texto-general {
+    // font-size: 18px;
+    color:$shadow-black;
+    text-transform: capitalize;
+    text-shadow: 1px 1px;
+    background-color: lightseagreen(65, 105, 225, 0.9);
+
+}
+
+
+/* estilo general para los subtitulos de la pagina */
+
+.subtitulo {
+    text-align: center;
+    // font-size: 30px;
+    text-shadow: 4px 2px 3px $dark-red;
+    font-weight: 5px;
+    text-decoration: underline;
+    margin: 5px;
+    margin-bottom: 20px;
+    padding: 5px;
+}

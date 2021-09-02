@@ -1,0 +1,40 @@
+/* Prueba de estilos en tabla */
+ #seccion-table { 
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+} 
+.seccion-table__comp {
+    border: 2px solid $dark-red;
+    background-color: $glass;
+    width: 50%;
+    height: 200px;
+    margin-bottom: 50px;
+    text-align: center;
+    border-collapse: collapse;
+  }
+.seccion-table__comp td, .tablaComparativa th {
+    border: 1px solid $whiteeth;
+    padding: 3px 2px;
+  }
+.seccion-table__comp tbody td {
+    font-size: 1em;
+  }
+
+.seccion-table__comp thead {
+    background: $dark-red;
+  }
+
+.seccion-table__comp thead th {
+    font-size: 1em;
+    font-weight: bold;
+    color: $whiteeth;
+    text-align: center;
+    border-left: 2px solid $dark-red;
+}
+
+.seccion-table__comp--sqins {
+  list-style: square inside;
+}

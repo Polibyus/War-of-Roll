@@ -1,0 +1,86 @@
+/* Estilos del header y menu */
+
+header {
+    display: flex;
+}
+/* Logo ubicado a la izquierda */
+#logotipo {
+    width: 125px;
+    height: 144px;
+    animation-name: rotarLogo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin: 10px;
+}
+
+/* Animacion de logotipo */
+@keyframes rotarLogo {
+    0%{
+        transform: rotate(0deg); }
+    100%{
+        transform: rotate(360deg); }
+}
+
+/* listado/nav para el menu */
+#menu-fixed {
+    margin: 0px;
+    padding: 3px;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+
+.menu-fixed__nav {
+    color: $ligth-green;
+    margin: 15px;
+    text-shadow: 1px 1px 1px $shadow-black;
+}
+
+#menu-fixed li:hover {
+    color: $ligth-green;
+    background-color: $aqua-green;
+    text-shadow: 1px 1px 1px $shadow-black;
+}
+
+#submenu ul {
+    padding: 10px;;
+    list-style-type: none;
+    background-color: $aqua-green;
+    display: none;
+    position: absolute;
+}
+
+#submenu ul li {
+    font-size: 1em;
+    padding: 10px;
+    list-style-type: none;
+    background-color: $aqua-green;
+}
+
+
+/* Fin de menu */
+
+/* active para hacer saber en que pag esta */
+
+.active {
+    background-color:  $aqua-green;
+}
+
+
+/* dejar los links sin subrayado */
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: $ligth-green;
+}
+
+a:visited {
+    color: $ligth-green;
+}
