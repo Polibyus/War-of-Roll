@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <!-- Mi hoja de estilo -->
     <link rel="stylesheet" href="../css/main.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Fuentes de google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,74 +20,90 @@
 </head>
 
 <body>
-    <!-- Encabezado logo a la izquierda, menu a la derecha -->
-        <header>
-            <a  class="navbar-brand" href="../index.html"> <img id="logotipo" src="../img/logotipo.png" alt="Logotipo del proyecto"> </a>
+<!-- Encabezado logo a la izquierda, menu a la derecha -->
+    <header>
+        <a  class="navbar-brand" href="../index.html"> <img id="logotipo" src="../img/logotipo.png" alt="Logotipo del proyecto"> </a>
+
     
-        
-            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="menu-fixed" >
-                <div class="fondo-transparente">                
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html"> <h3 class="menu-fixed__nav">Inicio</h3> </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="conocenos.html"> <h3 class="menu-fixed__nav">Conocenos</h3> </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="media.html"> <h3 class="menu-fixed__nav">Galeria</h3> </a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                   <h3 class="menu-fixed__nav">Productos</h3>
-                                </a>
-                                <ul id="submenu" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#"> <h3>Humanos</h3></a></li> 
-                                    <li><a class="dropdown-item" href="#"> <h3>Orcos</h3> </a></li>
-                                    <li><a class="dropdown-item" href="#"> <h3>Dragones</h3> </a></li>
-                                </ul>                
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="contacto.html"> <h3 class="menu-fixed__nav">Contacto</h3> </a></li>
-                        </ul>
-                    </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="menu-fixed" >
+            <div class="fondo-transparente">                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html"> <h3 class="menu-fixed__nav">Inicio</h3> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="conocenos.html"> <h3 class="menu-fixed__nav">Conocenos</h3> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="media.html"> <h3 class="menu-fixed__nav">Galeria</h3> </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <h3 class="menu-fixed__nav">Productos</h3>
+                            </a>
+                            <ul id="submenu" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#"> <h3>Humanos</h3></a></li> 
+                                <li><a class="dropdown-item" href="#"> <h3>Orcos</h3> </a></li>
+                                <li><a class="dropdown-item" href="#"> <h3>Dragones</h3> </a></li>
+                            </ul>                
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html"> <h3 class="menu-fixed__nav">Contacto</h3> </a></li>
+                    </ul>
                 </div>
-            </nav>
-    
-        </header>
-    <!-- Fin de encabezado -->
+            </div>
+        </nav>
+
+    </header>
+<!-- Fin de encabezado -->
 
 <section class="contacto">
-    <!-- Formulario para dejar comentarios -->
+<!-- Formulario para dejar comentarios -->
+<div class="container-contact d-flex justify-content-center">
+    <div class="row my-2 mx-2">
+        <div class="col-md-6"> <img class="img-fluid contacto-img" src="../img/heraldo.png" alt="Heraldo Mensajero"> </div>
+        <!--col-->
+        <div class="col-md-6">
+            <h2 class="form-title">Contanos tu experiencia</h2>
+            <p class="justify text-muted">Si te quedan dudas o consultas sobre nuestros productos, o queres saber mas acerca del mundo del roll, no dudes en mandarnos!</p>
+            <form>
+                <div class="form-group pt-2 pl-1"> <label for="exampleInputName">Tu nombre</label> <input type="text" class="form-control" id="exampleInputName"> </div>
+                <div class="form-group pl-1"> <label for="exampleInputEmail1">Email</label> <input type="email" class="form-control" id="exampleInputEmail1"> </div>
+                <div class="form-group pl-1"> <label for="exampleFormControlTextarea1">Mensaje</label> <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea> </div>
+                <div class="row">
+                    <div class="col-md-3 offset-md-9"><button type="submit" class="btn btn-c btn-primary">Enviar</button></div>
+                </div>
+            </form>
+        </div>
+        <!--col-->
+    </div>
+    <!--row-->
+</div>
 
-        <form id="contacto__form" action="" autocomplete="on">
-            <fieldset id="contacto__form__fieldset">
-                <legend>Deja tu comentario:</legend>
-                    <label for="apenom">Nombre y Apellido:</label><br>
-                    <input type="text" name="apenom" placeholder="Juan Perez" required > <br>
-                    <label for="correo">Email:</label> <br>
-                    <input type="email" name="correo" placeholder="correo@ejemplo.com" required> <br>
-                    <label for="terms">Acepta recibir novedades al mail?</label> 
-                    <input type="checkbox" name="terms" checked> <br>
-                    <label for="comment">Comentario:</label> <br>
-                    <textarea name="" id="cooment" cols="40" rows="5"></textarea> <br>
-
-                    <!-- botones -->
-                    
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpiar">
-                    <input type="button" value> <!--Sirve para JavaScript-->
-            </fieldset>
-        </form>
+<div class="d-flex flex-column align-items-center social-contact">
+    <ul>
+        <li><span class="social-icon social-facebook"><i class="fa fa-facebook"></i></span></li>
+        <li><span class="social-icon social-google"><i class="fa fa-google"></i></span></li>
+        <li><span class="social-icon social-linkedin"><i class="fa fa-linkedin"></i></span></li>
+        <li><span class="social-icon social-instagram"><i class="fa fa-instagram"></i></span></li>
+        <li><span class="social-icon social-twitter"><i class="fa fa-twitter"></i></span></li>
+    </ul>
 
 
-    <img id="contacto-img" src="../img/heraldo.png" alt="Heraldo Mensajero">
-
-
+</div>
+<div class="container-contact d-flex justify-content-center">
+<div class="row my-2 mx-2">
+        <iframe class="col-md-8" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13186.017474403074!2d-59.11383835750072!3d-34.28668885967305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb77ff67c54833%3A0x8a32c26f4bc7c0cb!2sCapilla%20del%20Se%C3%B1or%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1631050631611!5m2!1ses-419!2sar" width="600" height="600"></iframe>
+    <div class="col-md-4">
+        <h2 class="form-title">Donde nos ubicamos?</h2>
+        <p>Estamos en un pequeño pueblo llamado Capilla del Señor, asi que si se te complica venir a buscar los productos te los podemos enviar sin problemas!</p>
+    </div>
+</div>
+</div>
 </section>
 
 <!-- boton home -->
@@ -92,12 +111,32 @@
 <a class="boton-home" href="../index.html">Volver atras</a>
 
 <!-- Pie de pagina -->
-<footer>
-    <h4>Juan F. Pedraza</h4>
-    <h5>Copyright</h5>
-    <h6>Todos los derechos reservados</h6>
-</footer>
-<!-- Fin de pie de pagina -->
+<div class="">
+    <footer class="text-center text-lg-start" style="background-color: #db6930;">
+      <div class="container d-flex justify-content-center py-4">
+        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+          <i class="fab fa-facebook-f"></i>
+        </button>
+        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+          <i class="fab fa-youtube"></i>
+        </button>
+        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+          <i class="fab fa-instagram"></i>
+        </button>
+        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+          <i class="fab fa-twitter"></i>
+        </button>
+      </div>
+    
+      <!-- Copyright -->
+      <div class="text-center text-white p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="https://github.com/Polibyus">Juan F. Pedraza</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    </div>
+    <!-- Fin de pie de pagina -->
 
 <!-- JS Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
