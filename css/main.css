@@ -135,11 +135,41 @@ footer {
   width: 400px;
   height: 50%; }
 
-/* acomodar personajes de a 2 en fila */
-#section-info {
-  display: flex;
-  flex-direction: row;
-  align-items: center; }
+@media all and (min-width: 320px) {
+  .section-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .section-info__description {
+    margin: 0px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+@media all and (min-width: 768px) {
+  .section-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .section-info__description {
+    margin: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+@media all and (min-width: 1024px) {
+  .section-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+  .section-info__description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
 
 .section-info__img {
   width: 200px;
@@ -150,13 +180,6 @@ footer {
 .section-info__img:hover {
   width: 250px;
   height: 250px; }
-
-.section-info__description {
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%; }
 
 .section-info__text {
   padding: 5px;
@@ -181,7 +204,7 @@ footer {
 /* accion de mouse sobre el boton menu */
 .boton-home:hover {
   font-size: 0.9em;
-  background-color: rgba(135, 228, 28, 0.938); }
+  background-color: rgba(0, 82, 3, 0.918); }
 
 /* estilizar botones */
 input[type=submit], [type=reset] {

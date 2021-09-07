@@ -9,6 +9,8 @@
     <!-- Mi hoja de estilo -->
     <link rel="stylesheet" href="../css/main.css">
     <!-- Fuentes de google -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Font awesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
@@ -56,84 +58,64 @@
     </header>
 <!-- Fin de encabezado -->
 
-<section id="seccion-table">
-
-    <h2>Nuestro equipo!</h2>
-
-<!-- Tabla (incluir solo por el desafio) // no va en el final -->
-
-    <table class="seccion-table__comp"> 
-        <tr>
-            <th>Marca</th>
-            <th>Modelo</th>
-            <th>Caracteristicas</th>
-        </tr>
-        <tr> 
-            <td>Hellbot</td>   
-            <td>Magna 1</td>   
-            <td> <ul class="seccion-table__comp--sqins">
-                    <li>Volumen de impresión: 220x220x260mm</li>
-                    <li>Diámetro del material: 1.75 mm (0.069 in)</li>
-                    <li>Diámetro de la boquilla: 0.4 mm (0.016 in)</li>
-                </ul>
-            </td>  
-        </tr>  
-        <tr> 
-            <td>Hellbot</td>   
-            <td>Magna DUAL</td>   
-            <td> <ul class="seccion-table__comp--sqins">
-                    <li>Volumen de impresión: 300X300x400mm</li>
-                    <li>Velocidad: 80mm/s máximo. Recomendado 50mm/s</li>
-                    <li>Altura de capa: 100 – 400 micrones.</li>
-                </ul>
-            </td>  
-        </tr>
-    </table>
-</section>
-
-<section id="section-info">
+<section class="section-info">
     <div class="section-info__description">
         <img class="section-info__img" src="../img/polibyus.jpg" alt="Imagen del personaje Polibyus">
-        <h3>Polibyus</h3>
+        <h2>Polibyus</h2>
         <p class="section-info__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores perferendis voluptatem alias! Natus fugit sunt excepturi reprehenderit laboriosam placeat suscipit asperiores nesciunt inventore odit voluptates quaerat quasi, aliquam dignissimos mollitia.</p>
     </div>
 
     <div class="section-info__description">
         <img class="section-info__img" src="../img/vortiger.jpg" alt="Imagen del personaje vortiger">
-        <h3>Vortiger</h3>
+        <h2>Vortiger</h2>
+        <p class="section-info__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores perferendis voluptatem alias! Natus fugit sunt excepturi reprehenderit laboriosam placeat suscipit asperiores nesciunt inventore odit voluptates quaerat quasi, aliquam dignissimos mollitia.</p>
+    </div>
+    <div class="section-info__description">
+        <img class="section-info__img" src="../img/polibyus.jpg" alt="Imagen del personaje Polibyus">
+        <h2>Polibyus</h2>
+        <p class="section-info__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores perferendis voluptatem alias! Natus fugit sunt excepturi reprehenderit laboriosam placeat suscipit asperiores nesciunt inventore odit voluptates quaerat quasi, aliquam dignissimos mollitia.</p>
+    </div>
+
+    <div class="section-info__description">
+        <img class="section-info__img" src="../img/vortiger.jpg" alt="Imagen del personaje vortiger">
+        <h2>Vortiger</h2>
         <p class="section-info__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores perferendis voluptatem alias! Natus fugit sunt excepturi reprehenderit laboriosam placeat suscipit asperiores nesciunt inventore odit voluptates quaerat quasi, aliquam dignissimos mollitia.</p>
     </div>
 </section>
 
 <!-- Fin de tabla -->
 
-
-
 <!-- boton home -->
 
 <a class="boton-home" href="../index.html">Volver atras</a>
 
-<!-- Redes por ahora como prueba las mias -->
-    <nav id="redes" class="fondo-transparente">
-        <a href="https://www.instagram.com/juanchi.pedraza/?hl=es-la" target="blank">
-        <img class="logo-redes" src="../img/instagram.png" alt="Instagram.jpg" width="40" height="40"> 
-        </a>
-
-        <a href="https://www.facebook.com/JuanchiFP/" target="blank">
-        <img class="logo-redes" src="../img/facebook.png" alt="Facebook.jpg" width="40" height="40">
-        </a>
-
-        <a href="https://open.spotify.com/user/polipato" target="blank">
-        <img class="logo-redes" src="../img/spotify.png" alt="Spotify.jpg" width="40" height="40">
-        </a>
-    </nav> 
 
 <!-- Pie de pagina -->
-<footer>
-    <h4>Juan F. Pedraza</h4>
-    <h5>Copyright</h5>
-    <h6>Todos los derechos reservados</h6>
-</footer>
+<div class="">
+    <footer class="text-center text-lg-start" style="background-color: #db6930;">
+      <div class="container d-flex justify-content-center py-4">
+        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+          <i class="fab fa-facebook-f"></i>
+        </button>
+        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+          <i class="fab fa-youtube"></i>
+        </button>
+        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+          <i class="fab fa-instagram"></i>
+        </button>
+        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+          <i class="fab fa-twitter"></i>
+        </button>
+      </div>
+    
+      <!-- Copyright -->
+      <div class="text-center text-white p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="https://github.com/Polibyus">Juan F. Pedraza</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    </div>
 <!-- Fin de pie de pagina -->
 
 <!-- JS Bootstrap -->
