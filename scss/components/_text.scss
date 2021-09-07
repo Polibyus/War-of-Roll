@@ -39,35 +39,27 @@
 
 .titulo {
     text-align: center;
-    // font-size: 100px;
     text-shadow: 7px 4px 5px $aqua-green;
     font-weight: 5px;
     text-decoration: underline;
     margin-bottom: 50px;
 
 }
+ 
+// Haciendo responsive el texto del sitio
 
-/* aplicar a todos los textos si es necesario un cambio usar un id*/
-
-.texto-general {
-    // font-size: 18px;
-    color:$shadow-black;
-    text-transform: capitalize;
-    text-shadow: 1px 1px;
-    background-color: lightseagreen(65, 105, 225, 0.9);
-
+@media(min-width: 320px) {
+  p {
+    font-size: 10px;
+  }
 }
-
-
-/* estilo general para los subtitulos de la pagina */
-
-.subtitulo {
-    text-align: center;
-    // font-size: 30px;
-    text-shadow: 4px 2px 3px $dark-red;
-    font-weight: 5px;
-    text-decoration: underline;
-    margin: 5px;
-    margin-bottom: 20px;
-    padding: 5px;
+@media(min-width: 768px) {
+  p {
+    font-size: 15px;
+  }
+}
+@media(min-width: 1024px) {
+  p {
+    font-size: 20px;
+  }
 }

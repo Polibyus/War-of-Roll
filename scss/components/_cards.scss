@@ -1,0 +1,33 @@
+    @media all and (min-width: 320px) {
+        .cards-flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card-fix {
+            margin: 0px;
+            width: 70%;
+        }
+    }
+    @media all and (min-width: 768px) {
+        .cards-flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card-fix {
+            margin: 2rem;
+            width: 50%;
+        }
+    }
+    @media all and (min-width: 1024px) {
+        .cards-flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .card-fix {
+            width: 33%;
+        }
+    }
