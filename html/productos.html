@@ -4,60 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap local -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!-- Mi hoja de estilo -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Fuentes de google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <title>Productos - WoR</title>
+    <!-- Titulo de pestaña -->
+    <title>Productos - War of Roll</title>
 </head>
 
 <body>
-<!-- Encabezado -->
+<!-- Encabezado logo a la izquierda, menu a la derecha -->
 <header>
+    <a  class="navbar-brand" href="../index.html"> <img id="logotipo" src="../img/logotipo.png" alt="Logotipo del proyecto"> </a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="menu-fixed" >
+        <div class="fondo-transparente">                
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html"> <h3 class="menu-fixed__nav">Inicio</h3> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="conocenos.html"> <h3 class="menu-fixed__nav">Conocenos</h3> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="media.html"> <h3 class="menu-fixed__nav">Galeria</h3> </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           <h3 class="menu-fixed__nav">Productos</h3>
+                        </a>
+                        <ul id="submenu" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#"> <h3>Humanos</h3></a></li> 
+                            <li><a class="dropdown-item" href="#"> <h3>Orcos</h3> </a></li>
+                            <li><a class="dropdown-item" href="#"> <h3>Dragones</h3> </a></li>
+                        </ul>                
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html"> <h3 class="menu-fixed__nav">Contacto</h3> </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <a href="../index.html"> <img src="../img/horda.png" alt="Logotipo del proyecto">
-    </a>
-    <h1 class="titulo" >WAR OF ROLL</h1>
-
-<!-- Redes, a la derecha, por ahora como prueba las mias -->
-    <div class="fondoTransparente"> 
-        <h2> Seguinos:</h2>
-
-            <nav id="redes">
-                <a href="https://www.instagram.com/juanchi.pedraza/?hl=es-la" target="blank">
-                <img src="../img/instagram.png" alt="Instagram.jpg" width="50" height="50"> 
-                </a>
-
-                <a href="https://www.facebook.com/JuanchiFP/" target="blank">
-                <img class="BordesRedondeados" src="../img/facebook.png" alt="Facebook.jpg" width="40" height="40">
-                </a></li>
-
-                <a href="https://open.spotify.com/user/polipato" target="blank">
-                <img src="../img/spotify.png" alt="Spotify.jpg" width="40" height="40">
-                </a></li>
-            </nav>   
-    </div>
-
-    </header>
+</header>
 <!-- Fin de encabezado -->
-<hr>
-
 
 <!-- boton home -->
 
 <a class="boton-home" href="../index.html">Volver atras</a>
 
-<hr>
-
 <!-- Pie de pagina -->
-
-<footer>
-    <h2>Juan F. Pedraza</h2>
-    <h4>Copyright</h4>
-    <h6>Todos los derechos reservados</h6>
-</footer>
-
+<div class="">
+    <footer class="text-center text-lg-start" style="background-color: #db6930;">
+      <div class="container d-flex justify-content-center py-4">
+        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+          <i class="fab fa-facebook-f"></i>
+        </button>
+        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+          <i class="fab fa-youtube"></i>
+        </button>
+        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+          <i class="fab fa-instagram"></i>
+        </button>
+        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+          <i class="fab fa-twitter"></i>
+        </button>
+      </div>
+    
+      <!-- Copyright -->
+      <div class="text-center text-white p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="https://github.com/Polibyus">Juan F. Pedraza</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    </div>
 <!-- Fin de pie de pagina -->
+
+<!-- JS Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 
 </body>
 </html>
