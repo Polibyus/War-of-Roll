@@ -457,7 +457,7 @@ textarea {
     flex-direction: column;
     align-items: center; }
   .card-fix {
-    margin: 0px;
+    margin: 20px;
     width: 70%; } }
 
 @media all and (min-width: 768px) {
@@ -466,7 +466,7 @@ textarea {
     flex-direction: column;
     align-items: center; }
   .card-fix {
-    margin: 2rem;
+    margin: 20px;
     width: 50%; } }
 
 @media all and (min-width: 1024px) {
