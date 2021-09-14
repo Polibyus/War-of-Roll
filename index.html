@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" href="img/favicon.ico">
 <!-- Google / Search Engine Tags -->
 <meta itemprop="name" content="War of Roll - La guerra de la suerte">
@@ -19,10 +20,12 @@
 <meta name="twitter:title" content="War of Roll - La guerra de la suerte">
 <meta name="twitter:description" content="Somos War of Roll, un grupo de amigos que al tirar los dados se convierten en aventureros. Te invitamos a probar suerte y conocer nuestros productos.">
 <meta name="twitter:image" content="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/11/dungeons-and-dragons-2121663.jpg">
+<!-- Keywords -->
 <meta name="keywords"  content="roll, diversion, d&d, dungeons, dados, figuras, suerte, dados,azar, suerte, aventura, rpg, personaje, argentina, dungeonsanddragons, ace, adventure, tabletop, buenosaires, juegoderol, geek, boardgame, arte, photoshoot, lucky, wargame">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Bootstrap online -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<!-- Bs icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 <!-- Mi hoja de estilo -->
 <link rel="stylesheet" href="css/main.css">
 <!-- Font awesome -->
@@ -30,50 +33,45 @@
 <!-- Fuentes de google -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 <!-- Titulo de pestaña -->
 <title>War of Roll - La Guerra de la Suerte</title> 
 </head>
-
 <body>
-  <!-- Encabezado logo a la izquierda, menu a la derecha -->
-      <header>
-          <a  class="navbar-brand" href="index.html"> <img id="logotipo" src="img/logotipo.png" alt="Logotipo del proyecto"> </a>
-          <nav class="navbar navbar-expand-lg navbar-light bg-light" id="menu-fixed" >
-              <div class="fondo-transparente">                
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                      <ul class="navbar-nav">
-                          <li class="nav-item active">
-                              <a class="nav-link" href="index.html"> <h3 class="menu-fixed__nav">Inicio</h3> </a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="html/conocenos.html"> <h3 class="menu-fixed__nav">Conocenos</h3> </a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="html/media.html"> <h3 class="menu-fixed__nav">Galeria</h3> </a>
-                          </li>
-                          <li class="nav-item dropdown">
-                              <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                 <h3 class="menu-fixed__nav">Productos</h3>
-                              </a>
-                              <ul id="submenu" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                  <li><a class="dropdown-item" href="#"> <h3>Humanos</h3></a></li> 
-                                  <li><a class="dropdown-item" href="#"> <h3>Orcos</h3> </a></li>
-                                  <li><a class="dropdown-item" href="#"> <h3>Dragones</h3> </a></li>
-                              </ul>                
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="html/contacto.html"> <h3 class="menu-fixed__nav">Contacto</h3> </a></li>
-                      </ul>
-                  </div>
-              </div>
-          </nav>
-  
-      </header>
-  <!-- Fin de encabezado -->
+
+<!-- Encabezado -->
+<nav class="navbar navbar-expand-lg navbar-light fondo-transparente">
+  <div class="container-fluid">
+    <a  class="navbar-brand" href="index.html"> <img id="logotipo" src="img/logotipo.png" alt="Logotipo del proyecto"> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html"> <h3 class="menu-fixed__nav">Inicio</h3> </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="html/conocenos.html"> <h3 class="menu-fixed__nav">Conocenos</h3> </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="html/media.html"> <h3 class="menu-fixed__nav">Galeria</h3> </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="html/productos.html"> <h3 class="menu-fixed__nav">Productos</h3> </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="html/contacto.html"> <h3 class="menu-fixed__nav">Contacto</h3> </a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+        <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!-- Fin de encabezado -->
 
 <h1 class="titulo" >WAR OF ROLL</h1>
 
@@ -172,8 +170,8 @@
 
 
 <!-- JS Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
 
 
 </body>

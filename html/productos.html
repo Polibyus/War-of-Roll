@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="../img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap online -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Bs icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <!-- Mi hoja de estilo -->
     <link rel="stylesheet" href="../css/main.css">
     <!-- Font awesome -->
@@ -14,49 +16,44 @@
     <!-- Fuentes de google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <!-- Titulo de pestaña -->
     <title>Productos - War of Roll</title>
 </head>
 
 <body>
-<!-- Encabezado logo a la izquierda, menu a la derecha -->
-<header>
+<!-- Encabezado -->
+<nav class="navbar navbar-expand-lg navbar-light fondo-transparente">
+  <div class="container-fluid">
     <a  class="navbar-brand" href="../index.html"> <img id="logotipo" src="../img/logotipo.png" alt="Logotipo del proyecto"> </a>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="menu-fixed" >
-        <div class="fondo-transparente">                
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html"> <h3 class="menu-fixed__nav">Inicio</h3> </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="conocenos.html"> <h3 class="menu-fixed__nav">Conocenos</h3> </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="media.html"> <h3 class="menu-fixed__nav">Galeria</h3> </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                           <h3 class="menu-fixed__nav">Productos</h3>
-                        </a>
-                        <ul id="submenu" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#"> <h3>Humanos</h3></a></li> 
-                            <li><a class="dropdown-item" href="#"> <h3>Orcos</h3> </a></li>
-                            <li><a class="dropdown-item" href="#"> <h3>Dragones</h3> </a></li>
-                        </ul>                
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html"> <h3 class="menu-fixed__nav">Contacto</h3> </a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-</header>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html"> <h3 class="menu-fixed__nav">Inicio</h3> </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="conocenos.html"> <h3 class="menu-fixed__nav">Conocenos</h3> </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="media.html"> <h3 class="menu-fixed__nav">Galeria</h3> </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  active" href="productos.html"> <h3 class="menu-fixed__nav">Productos</h3> </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html"> <h3 class="menu-fixed__nav">Contacto</h3> </a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+        <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+      </form>
+    </div>
+  </div>
+</nav>
 <!-- Fin de encabezado -->
 
 <!-- boton home -->

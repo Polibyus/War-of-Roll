@@ -5,8 +5,8 @@ header {
 }
 /* Logo ubicado a la izquierda */
 #logotipo {
-    width: 125px;
-    height: 144px;
+    width: 62PX;
+    height: 72PX;
     animation-name: rotarLogo;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -24,33 +24,29 @@ header {
 
 /* listado/nav para el menu */
 #menu-fixed {
-    margin: 0px;
-    padding: 3px;
-    list-style-type: none;
+    z-index: 8;
     display: flex;
     flex-flow: row;
-    position: absolute;
     top: 0%;
-    right: 0%;
 }
 
 
 .menu-fixed__nav {
     color: $ligth-green;
-    margin: 15px;
     text-shadow: 1px 1px 1px $shadow-black;
+    margin: 0px;
+    padding: 0px;
 }
 
 #menu-fixed li:hover {
     color: $ligth-green;
     background-color: $aqua-green;
-    text-shadow: 1px 1px 1px $shadow-black;
 }
+
 
 #submenu ul {
     padding: 10px;;
     list-style-type: none;
-    background-color: $aqua-green;
     display: none;
     position: absolute;
 }
@@ -71,16 +67,3 @@ header {
     background-color:  $aqua-green;
 }
 
-
-/* dejar los links sin subrayado */
-a {
-    text-decoration: none;
-}
-
-a:link {
-    color: $ligth-green;
-}
-
-a:visited {
-    color: $ligth-green;
-}
