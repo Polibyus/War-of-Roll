@@ -120,14 +120,14 @@ footer {
     width: 50%; } }
 
 .text-muted {
-  font-size: 13px;
+  font-size: 20px;
   font-weight: bold; }
 
 .form-title {
   font-weight: bold; }
 
 .form-group label {
-  font-size: 11px;
+  font-size: 15px;
   font-weight: bold;
   padding-left: 5px;
   color: #828282; }
@@ -596,33 +596,31 @@ textarea {
   background-color: #faffe0;
   resize: none; }
 
-/* Comienzo galeria con grid, dios me ayude (? */
-.grid-galeria {
-  display: grid;
-  grid-auto-rows: 1fr;
-  grid-gap: 5px;
-  grid-auto-flow: row dense;
-  margin: 20px;
-  margin-bottom: 50px; }
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
 
-@media all and (min-width: 320px) {
-  .grid-galeria {
-    grid-template-columns: repeat(2, 1fr); } }
+.gallery div img {
+  -moz-box-shadow: 3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  margin: 20px; }
 
-@media all and (min-width: 768px) {
-  .grid-galeria {
-    grid-template-columns: repeat(3, 1fr); } }
+.shrink img:hover {
+  cursor: pointer;
+  border-radius: 0px;
+  -webkit-transform: scale(1.2, 1.2);
+  -webkit-transition-timing-function: ease-out;
+  -moz-transform: scale(1.2, 1.2);
+  -moz-transition-timing-function: ease-out;
+  -ms-transform: scale(1.2, 1.2);
+  -ms-transition-timing-function: ease-out;
+  -webkit-transition-duration: 500ms;
+  -moz-transition-duration: 500ms;
+  -ms-transition-duration: 500ms; }
 
-@media all and (min-width: 1024px) {
-  .grid-galeria {
-    grid-template-columns: repeat(5, 1fr); } }
-
-.grid-galeria__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
-
-/* fin de grid */
 @media (min-width: 320px) {
   h1 {
     font-size: 3em; }
@@ -671,7 +669,7 @@ textarea {
   text-shadow: 7px 4px 5px rgba(24, 221, 211, 0.815);
   font-weight: 5px;
   text-decoration: underline;
-  margin-bottom: 50px; }
+  margin: 30px; }
 
 @media (min-width: 320px) {
   p {

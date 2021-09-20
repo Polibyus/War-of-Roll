@@ -1,36 +1,32 @@
-/* Comienzo galeria con grid, dios me ayude (? */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 
-.grid-galeria {
-    display: grid;
-    grid-auto-rows: 1fr;
-    grid-gap: 5px;
-    grid-auto-flow: row dense;
-    margin: 20px;
-    margin-bottom: 50px;
-  }
-  
-  @media all and (min-width: 320px) {
-    .grid-galeria {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media all and (min-width: 768px) {
-    .grid-galeria {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  
-  @media all and (min-width: 1024px) {
-    .grid-galeria {
-      grid-template-columns: repeat(5, 1fr);
-    }
-  }
 
-  .grid-galeria__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
 
-/* fin de grid */
+.gallery div img {
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+  margin:20px;
+}
+
+
+
+.shrink img:hover {
+  cursor: pointer;
+  border-radius: 0px;
+-webkit-transform: scale(1.2, 1.2);
+-webkit-transition-timing-function: ease-out;
+                    -moz-transform: scale(1.2, 1.2);
+   -moz-transition-timing-function: ease-out;
+                     -ms-transform: scale(1.20, 1.20);
+    -ms-transition-timing-function: ease-out;
+
+       -webkit-transition-duration: 500ms;
+          -moz-transition-duration: 500ms;
+           -ms-transition-duration: 500ms;
+}
