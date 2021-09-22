@@ -31,7 +31,7 @@
 }
 @media all and (min-width: 1024px) {
     .container-contact {
-        width: 50%;
+        width: 70%;
     }
 }
 
@@ -73,7 +73,7 @@
     box-shadow: 0 1px 1px 1px rgba(0, 123, 255, .25);
 }
 
-ul {
+.contact-list {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
