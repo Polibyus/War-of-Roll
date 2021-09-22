@@ -7,8 +7,6 @@
 
 body {
     background-image: url(../img/background.jpg);
-    background-position: center;
-    background-size: cover;
     font-family: 'Staatliches', cursive;
 }
 
@@ -17,4 +15,20 @@ body {
     background-color: $glass;
     border: 5px;
     border-style: outset;
+}
+
+@media all and (min-width: 320px) {
+    body {
+        background-size: cover;
+    }
+}
+@media all and (min-width: 768px) {
+    body {
+        background-size: contain;
+    }
+}
+@media all and (min-width: 1024px) {
+    body {
+        background-size: contain;
+    }
 }
